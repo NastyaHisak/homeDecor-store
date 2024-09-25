@@ -1,0 +1,72 @@
+@import "../../../../assets/styles/auth-form";
+
+.login .container {
+  display: flex;
+
+  .page-image {
+    margin-left: 49px;
+    max-width: 100%;
+    align-self: flex-end;
+
+    img {
+      vertical-align: bottom;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1244px) {
+  .login .container {
+    .page-image {
+      margin-left: 20px;
+
+      img {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  .login .container {
+    display: block;
+    position: relative;
+    padding-bottom: 65px;
+
+    .auth-form {
+      margin-bottom: 0;
+    }
+
+    .page-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+/*
+@media screen and (max-width: 453px) {
+  .login .container {
+
+    .auth-form {
+      max-width: 100%;
+      .auth-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+      .auth-inputs {
+        .auth-input {
+          input {
+            width: 100%;
+          }
+        }
+      }
+      .auth-button {
+        margin-top: 20px;
+        button.button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}*/

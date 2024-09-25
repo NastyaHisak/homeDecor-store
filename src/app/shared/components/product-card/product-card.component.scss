@@ -1,0 +1,139 @@
+@import "../../../../assets/styles/variables";
+
+.product-card {
+  max-width: 291px;
+  height: 498px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+
+  &.is-light {
+    height: auto;
+    cursor: pointer;
+  }
+
+  .product-card-favorite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .product-card-img {
+    max-width: 291px;
+    max-height: 291px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-card-name {
+    height: 52px;
+    color: $green-text-color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 15px;
+  }
+
+  .product-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7c7c7;
+
+    .product-card-price {
+      color: $green-text-color;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .product-card-action .button {
+      width: 166px;
+    }
+  }
+
+  .product-card-extra {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .product-card-detail {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      span {
+        margin-left: 8px;
+        color: #9AA89B;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .product-card {
+    max-width: 250px;
+
+    .product-card-img {
+      width: 100%;
+      max-width: 597px;
+      height: 0;
+      padding-top: 100%;
+    }
+
+    .product-card-name {
+      font-size: 18px;
+    }
+
+    .product-card-info {
+      margin-top: 20px;
+
+      .product-card-price {
+        font-size: 16px;
+      }
+
+      .product-card-action .button {
+        width: 140px;
+      }
+    }
+
+    .product-card-extra {
+      .product-card-detail {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .product-card {
+    max-width: 291px;
+
+    .product-card-info {
+      margin-top: 8px;
+    }
+  }
+}
+@media screen and (max-width: 509px) {
+  .product-card {
+    width: 291px;
+    margin: 0 auto;
+
+    .product-card-info {
+      margin-top: 8px;
+    }
+  }
+}
+
